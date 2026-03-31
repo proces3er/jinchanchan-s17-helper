@@ -5,6 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    image: jinchanchan-backend:latest 
     container_name: jinchanchan-backend
     ports:
       - "8000:8000"
@@ -18,6 +19,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    image: jinchanchan-frontend:latest
     container_name: jinchanchan-frontend
     ports:
       - "3000:3000"
